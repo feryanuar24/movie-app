@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie APP</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="main-body" class="app-body">
+        <header id="main-header" class="app-header">
+            <h1 id="app-title" class="app-title">Movie APP</h1>
+            <nav id="main-nav" class="app-nav">
+                <ul id="nav-list" class="nav-list"></ul>
+                    <li class="nav-item" id="home">Home</li>
+                    <li class="nav-item" id="now-playing">Now Playing</li>
+                    <li class="nav-item" id="popular">Popular</li>
+                    <li class="nav-item" id="top-rated">Top Rated</li>
+                    <li class="nav-item" id="trending">Trending</li>
+                </ul>
+            </nav>
+            <div>
+                <input type="text" name="search-input" id="search-input" class="search-input" placeholder="Search..." />
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </header>
+        <main id="movies" class="movies-container"></main>
+        <footer id="main-footer" class="app-footer">
+            <p>&copy; 2024 Movie APP. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

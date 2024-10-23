@@ -1,0 +1,132 @@
+:root {
+  --color-yellow: #ffecb3;
+  --color-light-yellow: #fff9c4;
+  --color-pastel-yellow: #fff176;
+  --color-pastel-black: #484848;
+  --color-pastel-white: #f5f5f5;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Start: Header */
+header {
+  background-color: var(--color-pastel-yellow);
+  color: var(--color-pastel-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.app-nav {
+  display: flex;
+  list-style: none;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.nav-item {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: var(--color-pastel-yellow);
+  background-color: var(--color-pastel-black);
+}
+
+.search-input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+  outline: none;
+}
+
+.search-button {
+  display: none;
+}
+/* End: Header */
+
+/* Start: Main */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--color-pastel-white);
+  gap: 50px;
+  margin: 50px;
+}
+
+.movie-card {
+  background-color: var(--color-pastel-yellow);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.movie-poster {
+  width: 180px;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-pastel-black);
+}
+
+.movie-rating {
+  background-color: var(--color-pastel-black);
+  color: var(--color-pastel-yellow);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.movie-release-date {
+  font-size: small;
+}
+
+.movie-overview {
+  color: var(--color-pastel-black);
+  margin-top: 30px;
+  overflow: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  height: 0;
+}
+
+.visible {
+  opacity: 1;
+  height: auto;
+}
+/* End: Main */
+
+/* Start: Footer */
+footer {
+  background-color: var(--color-pastel-yellow);
+  color: var(--color-pastel-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+/* End: Footer */
