@@ -123,3 +123,12 @@ searchInput.addEventListener("keypress", (event) => {
     }
   }
 });
+
+// Bar Click
+document.getElementById("bars").addEventListener("click", () => {
+  const mainNav = document.getElementById("main-nav");
+  const searchInput = document.getElementById("search-input");
+
+  mainNav.style.opacity = mainNav.style.opacity === "0" ? "1" : "0";
+  searchInput.style.opacity = searchInput.style.opacity === "0" ? "1" : "0";
+});
